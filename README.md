@@ -6,15 +6,22 @@ This provides an Arch Linux (and derivatives) PKGBUILD for `gnome-clocks` that h
 
 This uses and updates the following pieces:
 * original PKGBUILD by seath [here](https://gitlab.com/seath1/pkgbuild)
-* updated patches from postmarketOS [1](https://gitlab.com/postmarketOS/pmaports/-/issues/1170),[2](https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/gnome-clocks).
+* updated [patches](https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/gnome-clocks) from postmarketOS ([implementation tracker](https://gitlab.com/postmarketOS/pmaports/-/issues/1170)).
 * current `gnome-clocks` [pkgbuild](https://github.com/archlinux/svntogit-packages/blob/packages/gnome-clocks/trunk/PKGBUILD)
 
 ## License
-* Should be GPL - let me know if there are conflicts from sources
+* Should be GPL - let me know if there are any overlooked conflicts from sources
 
 ## Installation
 * This depends on [`sdbus-ccp`](https://aur.archlinux.org/pkgbase/sdbus-cpp) and [`waked`](https://aur.archlinux.org/packages/waked-git) (both in the AUR)
 * `git clone https://github.com/lectrode/gnome-clocks-waked; cd gnome-clocks-waked`
 * `makepkg -si`
 * `sudo systemctl enable waked --now` #required for alarms to wake up device from suspend
+* reboot or run `/etc/xdg/autostart/gnome-clocks.desktop`
 
+## Usage
+* This is a backend implementation utilizing an existing interface. As such, all you need to do to use/test this is
+   * launch `gnome-clocks`
+   * set an alarm (i.e. for a minute from now)
+   * suspend
+   * Your device should wake up in short order for the alarm you just set
