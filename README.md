@@ -13,7 +13,7 @@ This uses and updates the following pieces:
 * Should be GPL - let me know if there are any overlooked conflicts from sources
 
 ## Installation
-* This depends on [`sdbus-ccp`](https://aur.archlinux.org/pkgbase/sdbus-cpp) and [`waked`](https://aur.archlinux.org/packages/waked-git) (both in the AUR)
+* This depends on [`waked`](https://aur.archlinux.org/packages/waked-git), which in turn depends on [`sdbus-ccp`](https://aur.archlinux.org/pkgbase/sdbus-cpp) (both in the AUR)
 * `git clone https://github.com/lectrode/gnome-clocks-waked; cd gnome-clocks-waked`
 * `makepkg -si`
 * `sudo systemctl enable waked --now` #required for alarms to wake up device from suspend
