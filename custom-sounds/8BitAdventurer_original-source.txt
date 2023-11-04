@@ -1,0 +1,16 @@
+
+8BitAdventure alarm sound by Anthony Symkowick
+(Modified by lectrode)
+
+Source:
+https://archive.org/details/gnome-clocks-sounds-batch-1
+https://gitlab.gnome.org/GNOME/gnome-clocks/-/issues/60#note_920725
+
+
+License (per the linked comment by the artist): Public Domain
+
+
+The included sound file was modified from the original to better replace original "alarm-clock-elapsed.oga" sound in freedesktop sound theme:
+-converted to ogg format
+-volume increased
+-duration decreased to 6 second loop

@@ -1,0 +1,13 @@
+
+
+Alarm-Digitone-1 by Jakub Steiner
+(Modified by lectrode)
+
+https://gitlab.gnome.org/GNOME/gnome-clocks/-/issues/10#note_613136
+
+
+The included sound file was modified from the original to better replace original "complete.oga" sound in freedesktop sound theme:
+-converted to ogg format
+-volume increased
+-duration decreased
+-pitch increased
