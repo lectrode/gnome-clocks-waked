@@ -19,7 +19,7 @@ AUR Helper:
 * `pikaur -S gnome-clocks-waked`
 
 Manual:
-* This depends on [`waked`](https://aur.archlinux.org/packages/waked-git), which in turn depends on [`sdbus-ccp`](https://aur.archlinux.org/pkgbase/sdbus-cpp) (both in the AUR)
+* This depends on [`waked`](https://aur.archlinux.org/packages/waked-git), which in turn depends on [`sdbus-ccp<=1.5.0`](https://gitlab.archlinux.org/archlinux/packaging/packages/sdbus-cpp/-/tree/7ee4ab989a61165d60783e327cfeaf8a5076b031)
 * `git clone https://github.com/lectrode/gnome-clocks-waked; cd gnome-clocks-waked`
 * (Optional: replace sound files - see "Howto" below)
 * `makepkg -si`
